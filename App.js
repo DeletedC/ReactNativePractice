@@ -1,11 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import {cow} from 'react-native-dotenv';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Hiiiiiiiiii!</Text>
+      <Text>{cow}</Text>
       <StatusBar style="auto" />
     </View>
   );
